@@ -46,3 +46,12 @@ The sphere should overlap the dot and be nicely fitted to the pancake.
 
 To get the actual thickness measurement see `XXX_thkmax.txt` in same directory.
 
+
+How to generate thickness statistics
+------------------------------------
+
+To get a table of thicknesses (2xradius) for each subject/dot, run::
+
+    bash dotskel.sh stats_table OUTPUTDIR
+
+

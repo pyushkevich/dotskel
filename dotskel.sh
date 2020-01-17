@@ -138,6 +138,24 @@ function subj_thickness()
   done
 }
 
+# Tabulate the statistics
+function stats_table()
+{
+  # User specifies working directory
+  read WROOT args <<< $@
+
+  # List all subjects
+  for SUBJ in $(ls $WROOT/thickness); do
+    for DOT in $(ls $WROOT/thickness/$SUBJ); do
+      thickfile=$WROOT/thickness/$SUBJ/$DOT/${SUBJ}_${DOT}_thkmax.txt
+      if [[ -f $thickfile ]]; then
+        THICKNESS=$(cat $thickfile | grep Radius | awk '{print $4 * 2.0}')
+        echo $SUBJ,$DOT,$THICKNESS
+      fi
+    done
+  done
+}
+
 # Main entrypoint
 cmd=${1?}
 shift
@@ -146,6 +164,8 @@ if [[ $cmd == "dot" || $cmd == "dot_thickness" ]]; then
   dot_thickness "$@"
 elif  [[ $cmd == "subj" || $cmd == "subj_thickness" ]]; then
   subj_thickness "$@"
+elif  [[ $cmd == "subj" || $cmd == "stats_table" ]]; then
+  stats_table "$@"
 else
   echo "Unknown command $cmd"
   exit -1
