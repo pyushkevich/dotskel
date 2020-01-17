@@ -1,0 +1,41 @@
+################################################
+# ITK-SnAP Label Description File
+# File format: 
+# IDX   -R-  -G-  -B-  -A--  VIS MSH  LABEL
+# Fields: 
+#    IDX:   Zero-based index 
+#    -R-:   Red color component (0..255)
+#    -G-:   Green color component (0..255)
+#    -B-:   Blue color component (0..255)
+#    -A-:   Label transparency (0.00 .. 1.00)
+#    VIS:   Label visibility (0 or 1)
+#    IDX:   Label mesh visibility (0 or 1)
+#  LABEL:   Label description 
+################################################
+    0     0    0    0        0  0  0    "Clear Label"
+    1   170    0    0        1  1  1    "ERC_1"
+    2   255    0    0        1  1  1    "ERC_2"
+    3   255   87   90        1  1  1    "ERC_3"
+    4   255    0  127        1  1  1    "tERC_1"
+    5   255   85  255        1  1  1    "tERC_2"
+    6   248  142  255        1  1  1    "Braak_1"
+    7     0    0    0        1  1  1    "BA36_1"
+    8    77   77   57        1  1  1    "BA36_2"
+    9   135  135  101        1  1  1    "MISSING"
+   10   255  255    0        1  1  1    "PHC_1"
+   11   255  255  127        1  1  1    "PHC_2"
+   12     0    0  128        1  1  1    "CA1_1"
+   13     0    0  255        1  1  1    "CA1_2"
+   14    23   89  139        1  1  1    "CA1_3"
+   15     0  255  255        1  1  1    "CA1_4"
+   16   108  162  162        1  1  1    "CA1_5"
+   17     0   85    0        1  1  1    "SRLM_1"
+   18     0  170    0        1  1  1    "SRLM_2"
+   19    85  255    0        1  1  1    "SRLM_3"
+   20    85  255  127        1  1  1    "SRLM_4"
+   21   170  255  127        1  1  1    "SRLM_5"
+   22    61   31   60        1  1  1    "SUB_1"
+   23    85    0  127        1  1  1    "SUB_2"
+   24   170    0  255        1  1  1    "SUB_3"
+   25   170   85  255        1  1  1    "SUB_4"
+   26   143  111  190        1  1  1    "SUB_5"

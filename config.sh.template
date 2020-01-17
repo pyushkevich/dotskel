@@ -1,0 +1,5 @@
+#!/bin/bash
+export PATH=$HOME/tk/cmrep/xc64rel:$PATH
+export QVORONOI_BINARY=$HOME/tk/qhull/qhull/bin/qvoronoi
+
+
